@@ -1,0 +1,53 @@
+<script>
+	$("#register").click(function (e) {
+	  e.preventDefault()
+	  $(this).tab('show')
+	})
+</script>
+<div style="height:85%;width:100%;background: #f8f8f8;display:block;border-bottom-style:ridge;" >
+	<div style="height:5%;"></div>
+	<div style="margin-left:45%;">
+		<span style="color:red;font-size:48px;">e</span><span style="color:blue;font-size:48px;margin-left:-4px;">b</span><span style="color:orange;font-size:48px;margin-left:-4px;">a</span><span style="color:green;font-size:48px;margin-left:-4px;">y</span>
+	</div>
+	<div style="height:5%;"></div>
+	<div style="height:50%;width:30%;margin-left:35%;display:block;">
+	  	<div class="tabs" style="height:100%;">
+	  		 <ul class="nav nav-tabs" role="tablist">
+	  		 	<li role="presentation" class="active" style="width:50%;"><a href="#signin" aria-controls="home" style="font-size:20px; padding-left:30%;" role="tab" data-toggle="tab">Sign In</a></li>
+			    <li role="presentation"  style="width:50%;"><a href="#register" aria-controls="profile" style="font-size:20px; padding-left:30%;" role="tab" data-toggle="tab">Register</a></li>
+			</ul>
+
+	  		<div class="tab-content" style="height:80%;">
+	  			<div role="tabpanel" class="tab-pane active" style="height:100%;" id="signin">
+	  				<div style="margin-bottom:20px;">
+	  					<input type="text" class="form-control" placeholder="Email or Username" ng-model="$ctrl.username" required>
+	  				</div>
+	  				<div style="margin-bottom:20px;">
+						<input type="text" class="form-control" placeholder="Password" ng-model="$ctrl.password" required>
+					</div>
+					<div style="margin-bottom:20px;">
+						<button class="btn-primary form-control" ng-click="$ctrl.signin()">Sign In</button>
+					</div>
+				</div>
+				<div role="tabpanel" class="tab-pane " style="height:100%;" id="register">
+	  				<div style="margin-bottom:20px;">
+	  					<input type="text" class="form-control" placeholder="Email or Username" ng-model="$ctrl.username" required>
+	  				</div>
+	  				<div style="margin-bottom:20px;">
+						<input type="text" class="form-control" placeholder="Password" ng-model="$ctrl.password" required>
+					</div>
+					<div style="margin-bottom:20px;">
+						<button class="btn-primary form-control" ng-click="$ctrl.signin()">Sign In</button>
+					</div>
+				</div>
+			</div>
+	  	</div>
+	</div>
+</div>
+
+<div style="height:15%;width:100%;background-color:white;">
+	
+</div>
+
+
+
